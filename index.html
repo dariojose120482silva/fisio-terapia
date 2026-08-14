@@ -229,6 +229,26 @@
 </head>
 
 <body class="font-body-md text-on-surface">
+    <!-- TELA DE BOAS-VINDAS -->
+    <div id="welcome-screen"
+        class="fixed inset-0 z-[100] bg-beige-light dark:bg-surface flex flex-col items-center justify-center px-6 text-center transition-opacity duration-700">
+        <div class="w-20 h-20 rounded-full bg-primary flex items-center justify-center mb-6 shadow-lg">
+            <span class="material-symbols-outlined text-on-primary text-[40px]">favorite</span>
+        </div>
+        <h1 class="font-headline-lg-mobile text-on-surface mb-2">Bem-vindo(a)!</h1>
+        <p class="font-body-md text-on-surface-variant max-w-[300px] mb-8">
+            A Dra. Beatriz Gonçalves preparou uma mensagem especial para você.
+        </p>
+        <button id="btn-play-welcome"
+            class="flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-md shadow-lg hover:scale-105 transition-transform active:scale-95">
+            <span class="material-symbols-outlined text-[24px]">play_arrow</span>
+            <span>Assistir Saudação da Dra. Beatriz</span>
+        </button>
+        <button id="btn-skip-welcome"
+            class="mt-4 font-caption text-on-surface-variant underline hover:text-primary transition-colors">
+            Ir direto para o site
+        </button>
+    </div>
 
     <!-- 1. HEADER -->
     <header
@@ -277,7 +297,7 @@
                         <!-- muted é obrigatório para autoplay funcionar no Chrome/Safari -->
                         <!-- 1. Vídeo (Saudação) -->
                         <video id="profile-video" playsinline preload="auto"
-                          muted  class="absolute inset-0 w-full h-full object-cover object-center rounded-[15px] border-4 border-beige-main z-30 transition-opacity duration-500"
+                            class="absolute inset-0 w-full h-full object-cover object-center rounded-[15px] border-4 border-beige-main z-30 transition-opacity duration-500"
                             style="opacity: 1;">
                             <source src="videos/perfio-novo-bia.mp4" type="video/mp4">
                         </video>
@@ -943,8 +963,8 @@
     <!-- Scripts -->
     <script> document.addEventListener('DOMContentLoaded', () => {
 
-       
-    console.log("🚀 O JAVASCRIPT CARREGOU COM SUCESSO!"); // <-- ADICIONE ESTA LINHA
+
+            console.log("🚀 O JAVASCRIPT CARREGOU COM SUCESSO!"); // <-- ADICIONE ESTA LINHA
 
             // Ano atual no rodapé
             const yearSpan = document.getElementById('current-year');
@@ -1293,12 +1313,46 @@
                     closeBooking();
                 });
             }
-         
+
+            
+
             // Inicia o calendário e as horas assim que a página carrega
             renderWeek();
             renderTimes();
+
+            // ==========================================
+            // 7. TELA DE BOAS-VINDAS (Saudação com SOM)
+            // ==========================================
+            const welcomeScreen = document.getElementById('welcome-screen');
+            const btnPlayWelcome = document.getElementById('btn-play-welcome');
+            const btnSkipWelcome = document.getElementById('btn-skip-welcome');
+
+            function closeWelcome() {
+                if (!welcomeScreen) return;
+                welcomeScreen.style.opacity = '0';
+                setTimeout(() => { welcomeScreen.style.display = 'none'; }, 700);
+            }
+
+            if (btnPlayWelcome) {
+                btnPlayWelcome.addEventListener('click', () => {
+                    clearInterval(autoSwitchInterval); // Pausa as fotos para não interromper
+                    if (profileVideo) {
+                        profileVideo.muted = false;   // LIBERA O SOM!
+                        profileVideo.currentTime = 0;
+                        profileVideo.style.opacity = '1';
+                        profileVideo.play().catch(() => { });
+                    }
+                    closeWelcome();
+                });
+            }
+
+            if (btnSkipWelcome) {
+                btnSkipWelcome.addEventListener('click', closeWelcome);
+            }
+
+
         });
-        </script>
+    </script>
 </body>
 
 </html>
