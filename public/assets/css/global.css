@@ -1,0 +1,44 @@
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        body {
+            overscroll-behavior: none;
+        }
+
+        @layer base {
+
+            html,
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            .pb-safe {
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+            }
+
+            .pt-safe {
+                padding-top: env(safe-area-inset-top, 0px);
+            }
+        
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .img-fade {
+            transition: opacity 0.8s ease-in-out;
+        }
+
+    }

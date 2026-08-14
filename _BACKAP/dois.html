@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <title>Dra. Beatriz Gonçalves | Fisioterapia no Memorial São Lucas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "beige-light": "rgb(var(--beige-light) / <alpha-value>)",
+                        "beige-main": "rgb(var(--beige-main) / <alpha-value>)",
+                        "beige-dark": "rgb(var(--beige-dark) / <alpha-value>)",
+                        "on-tertiary-fixed": "rgb(var(--on-tertiary-fixed) / <alpha-value>)",
+                        "on-primary": "rgb(var(--on-primary) / <alpha-value>)",
+                        "on-secondary-fixed": "rgb(var(--on-secondary-fixed) / <alpha-value>)",
+                        "on-primary-fixed": "rgb(var(--on-primary-fixed) / <alpha-value>)",
+                        "on-primary-container": "rgb(var(--on-primary-container) / <alpha-value>)",
+                        outline: "rgb(var(--outline) / <alpha-value>)",
+                        "on-background": "rgb(var(--on-background) / <alpha-value>)",
+                        "surface-container-high": "rgb(var(--surface-container-high) / <alpha-value>)",
+                        "inverse-primary": "rgb(var(--inverse-primary) / <alpha-value>)",
+                        "primary-fixed-dim": "rgb(var(--primary-fixed-dim) / <alpha-value>)",
+                        error: "rgb(var(--error) / <alpha-value>)",
+                        "error-container": "rgb(var(--error-container) / <alpha-value>)",
+                        "surface-variant": "rgb(var(--surface-variant) / <alpha-value>)",
+                        "surface-container-lowest": "rgb(var(--surface-container-lowest) / <alpha-value>)",
+                        "on-secondary-fixed-variant": "rgb(var(--on-secondary-fixed-variant) / <alpha-value>)",
+                        "tertiary-fixed-dim": "rgb(var(--tertiary-fixed-dim) / <alpha-value>)",
+                        background: "rgb(var(--background) / <alpha-value>)",
+                        "on-primary-fixed-variant": "rgb(var(--on-primary-fixed-variant) / <alpha-value>)",
+                        "on-surface": "rgb(var(--on-surface) / <alpha-value>)",
+                        "on-secondary": "rgb(var(--on-secondary) / <alpha-value>)",
+                        "secondary-container": "rgb(var(--secondary-container) / <alpha-value>)",
+                        "primary-fixed": "rgb(var(--primary-fixed) / <alpha-value>)",
+                        "inverse-on-surface": "rgb(var(--inverse-on-surface) / <alpha-value>)",
+                        "secondary-fixed-dim": "rgb(var(--secondary-fixed-dim) / <alpha-value>)",
+                        primary: "rgb(var(--primary) / <alpha-value>)",
+                        "tertiary-container": "rgb(var(--tertiary-container) / <alpha-value>)",
+                        "surface-tint": "rgb(var(--surface-tint) / <alpha-value>)",
+                        "secondary-fixed": "rgb(var(--secondary-fixed) / <alpha-value>)",
+                        "tertiary-fixed": "rgb(var(--tertiary-fixed) / <alpha-value>)",
+                        tertiary: "rgb(var(--tertiary) / <alpha-value>)",
+                        "on-surface-variant": "rgb(var(--on-surface-variant) / <alpha-value>)",
+                        "on-tertiary-container": "rgb(var(--on-tertiary-container) / <alpha-value>)",
+                        secondary: "rgb(var(--secondary) / <alpha-value>)",
+                        "on-error": "rgb(var(--on-error) / <alpha-value>)",
+                        "surface-bright": "rgb(var(--surface-bright) / <alpha-value>)",
+                        "on-secondary-container": "rgb(var(--on-secondary-container) / <alpha-value>)",
+                        "surface-container-highest": "rgb(var(--surface-container-highest) / <alpha-value>)",
+                        "on-tertiary-fixed-variant": "rgb(var(--on-tertiary-fixed-variant) / <alpha-value>)",
+                        "on-tertiary": "rgb(var(--on-tertiary) / <alpha-value>)",
+                        "surface-container": "rgb(var(--surface-container) / <alpha-value>)",
+                        "on-error-container": "rgb(var(--on-error-container) / <alpha-value>)",
+                        "outline-variant": "rgb(var(--outline-variant) / <alpha-value>)",
+                        "primary-container": "rgb(var(--primary-container) / <alpha-value>)",
+                        "surface-dim": "rgb(var(--surface-dim) / <alpha-value>)",
+                        "inverse-surface": "rgb(var(--inverse-surface) / <alpha-value>)",
+                        "surface-container-low": "rgb(var(--surface-container-low) / <alpha-value>)",
+                        surface: "rgb(var(--surface) / <alpha-value>)"
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                    spacing: {
+                        "container-padding-mobile": "20px", "stack-md": "24px", "stack-sm": "12px", gutter: "24px",
+                        "container-padding-desktop": "64px", "stack-lg": "48px", base: "8px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Manrope", "sans-serif"], "headline-xl": ["Manrope", "sans-serif"],
+                        "headline-lg-mobile": ["Manrope", "sans-serif"], "label-md": ["Hanken Grotesk", "sans-serif"],
+                        "body-md": ["Hanken Grotesk", "sans-serif"], "headline-lg": ["Manrope", "sans-serif"],
+                        caption: ["Hanken Grotesk", "sans-serif"], "body-lg": ["Hanken Grotesk", "sans-serif"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+                        "label-md": ["14px", { lineHeight: "20px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        caption: ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --beige-light: 253 251 247; --beige-main: 234 221 202; --beige-dark: 194 178 154;
+            --on-tertiary-fixed: 0 30 48; --on-primary: 255 255 255; --on-secondary-fixed: 0 17 90;
+            --on-primary-fixed: 0 33 24; --on-primary-container: 138 189 169; --outline: 112 121 116;
+            --on-background: 24 28 30; --surface-container-high: 229 233 235; --inverse-primary: 158 209 189;
+            --primary-fixed-dim: 158 209 189; --error: 186 26 26; --error-container: 255 218 214;
+            --surface-variant: 224 227 229; --surface-container-lowest: 255 255 255;
+            --on-secondary-fixed-variant: 46 63 147; --tertiary-fixed-dim: 142 205 255; --background: 247 250 252;
+            --on-primary-fixed-variant: 28 79 64; --on-surface: 24 28 30; --on-secondary: 255 255 255;
+            --secondary-container: 150 165 255; --primary-fixed: 185 238 217; --inverse-on-surface: 238 241 243;
+            --secondary-fixed-dim: 186 195 255; --primary: 0 54 41; --tertiary-container: 0 73 109;
+            --surface-tint: 54 103 87; --secondary-fixed: 222 224 255; --tertiary-fixed: 203 230 255;
+            --tertiary: 0 50 76; --on-surface-variant: 64 73 69; --on-tertiary-container: 98 186 248;
+            --secondary: 71 88 172; --on-error: 255 255 255; --surface-bright: 247 250 252;
+            --on-secondary-container: 38 55 139; --surface-container-highest: 224 227 229;
+            --on-tertiary-fixed-variant: 0 75 112; --on-tertiary: 255 255 255; --surface-container: 235 238 240;
+            --on-error-container: 147 0 10; --outline-variant: 192 201 195; --primary-container: 26 77 62;
+            --surface-dim: 215 218 220; --inverse-surface: 45 49 51; --surface-container-low: 241 244 246;
+            --surface: 247 250 252;
+            color-scheme: light;
+        }
+        .dark {
+            --beige-light: 23 21 18; --beige-main: 58 52 40; --beige-dark: 138 122 95;
+            --on-primary: 0 56 43; --on-primary-container: 185 238 217; --outline: 138 147 142;
+            --on-background: 226 227 224; --surface-container-high: 34 38 37; --inverse-primary: 0 81 61;
+            --error: 255 180 171; --error-container: 147 0 10; --surface-variant: 64 73 69;
+            --surface-container-lowest: 12 15 14; --background: 16 20 19; --on-surface: 226 227 224;
+            --on-secondary: 23 42 124; --secondary-container: 46 63 147; --inverse-on-surface: 45 49 51;
+            --primary: 158 209 189; --tertiary-container: 0 73 109; --surface-tint: 158 209 189;
+            --tertiary: 142 205 255; --on-surface-variant: 192 201 195; --on-tertiary-container: 203 230 255;
+            --secondary: 186 195 255; --on-error: 105 0 5; --surface-bright: 54 58 57;
+            --on-secondary-container: 222 224 255; --surface-container-highest: 42 46 45;
+            --on-tertiary: 0 50 76; --surface-container: 26 30 29; --on-error-container: 255 218 214;
+            --outline-variant: 64 73 69; --primary-container: 26 77 62; --surface-dim: 16 20 19;
+            --inverse-surface: 226 227 224; --surface-container-low: 22 26 25; --surface: 16 20 19;
+            color-scheme: dark;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0; padding: 0; max-width: 100%; overflow-x: clip;
+            min-height: max(884px, 100dvh);
+            background-color: rgb(var(--beige-light));
+            transition: background-color 0.4s ease;
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+        .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+        ::-webkit-scrollbar { display: none; }
+        .img-fade { transition: opacity 0.8s ease-in-out; }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface">
+
+    <!-- 1. HEADER -->
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-beige-light/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe">
+        <div class="h-20 px-container-padding-mobile flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="font-headline-md text-primary text-[18px] leading-tight">Dra. Beatriz Gonçalves</span>
+                <span
+                    class="font-label-md text-on-surface-variant uppercase tracking-wider text-[10px]">Fisioterapia</span>
+            </div>
+            <div class="flex items-center gap-base">
+                <button id="theme-toggle"
+                    class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-beige-main transition-colors"
+                    aria-label="Alternar tema claro/escuro">
+                    <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+                </button>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. MAIN -->
+    <main class="relative w-full pt-20 pb-28 bg-beige-light">
+        <div class="flex flex-col w-full relative">
+
+            <!-- RAIZ: HERO -->
+            <section class="relative w-full overflow-hidden bg-surface-container-low pt-8 pb-12 rounded-b-[2rem]">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-beige-main/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-48 h-48 bg-primary-container/20 rounded-full blur-2xl translate-y-1/3 -translate-x-1/4 pointer-events-none">
+                </div>
+                <div class="px-container-padding-mobile flex flex-col items-center relative z-10">
+                    <div class="relative w-64 h-64 mb-6 group cursor-pointer" id="profile-container">
+                        <div
+                            class="absolute inset-0 bg-beige-dark/30 rounded-full blur-xl scale-110 opacity-70 transition-transform duration-500 group-hover:scale-125">
+                        </div>
+                        <img id="img-green" alt="Dra. Beatriz Gonçalves - Jaleco Verde"
+                            class="img-fade absolute inset-0 w-full h-full object-cover object-center rounded-full border-4 border-beige-main shadow-[0_8px_30px_rgba(194,178,154,0.3)] z-10 opacity-100"
+                            src="assets/img/perfil-bia.png" />
+                        <img id="img-white" alt="Dra. Beatriz Gonçalves - Jaleco Branco"
+                            class="img-fade absolute inset-0 w-full h-full object-cover object-center rounded-full border-4 border-beige-main shadow-[0_8px_30px_rgba(194,178,154,0.3)] z-10 opacity-0"
+                            src="assets/img/bia-perfil.png" />
+                        <div
+                            class="absolute bottom-2 right-2 w-8 h-8 bg-beige-light rounded-full flex items-center justify-center shadow-sm z-20 border border-beige-main/50">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-on-primary text-[14px]">done</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center flex flex-col gap-2 mb-8">
+                        <h1 class="font-headline-lg-mobile text-on-surface">
+                            Tem novidade no <br />
+                            <span class="text-secondary font-headline-xl"> Memorial São Lucas!</span>
+                        </h1>
+                        <p class="font-body-md text-on-surface-variant max-w-[280px] mx-auto mt-2">
+                            Agora contamos com atendimento de <strong
+                                class="text-primary font-bold">FISIOTERAPIA</strong>. Mais cuidado e qualidade de vida
+                            para você.
+                        </p>
+                    </div>
+
+                    <!-- CTA agora ABRE o Bottom Sheet de agendamento -->
+                    <button id="cta-agendar"
+                        class="flex items-center gap-3 bg-secondary text-on-secondary px-6 py-4 rounded-full font-label-md shadow-[0_4px_14px_rgba(71,88,172,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(71,88,172,0.4)] transition-all active:scale-95 w-full max-w-[320px] justify-center group">
+                        <span
+                            class="material-symbols-outlined text-[24px] group-hover:rotate-12 transition-transform">calendar_month</span>
+                        <span>Agende sua Consulta</span>
+                    </button>
+
+                    <div class="flex items-center gap-6 mt-8">
+                        <div class="flex flex-col items-center">
+                            <span class="font-headline-md text-primary">CREFITO</span>
+                            <span class="font-caption text-on-surface-variant">458955-F</span>
+                        </div>
+                        <div class="w-px h-8 bg-outline-variant"></div>
+                        <div class="flex flex-col items-center">
+                            <span class="font-headline-md text-primary flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[20px]">star</span> 5.0
+                            </span>
+                            <span class="font-caption text-on-surface-variant">Avaliações</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RAIZ: SPECIALTIES -->
+            <section class="px-container-padding-mobile py-stack-md flex flex-col gap-stack-sm mt-4">
+                <div class="flex items-center justify-between mb-2">
+                    <h2 class="font-headline-md text-on-surface">Áreas de Atuação</h2>
+                    <span class="material-symbols-outlined text-primary">medical_services</span>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-beige-main flex gap-4 items-start relative overflow-hidden group hover:border-primary/30 transition-colors">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-tertiary-container/5 rounded-bl-full -z-10 group-hover:bg-tertiary-container/10 transition-colors">
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center shrink-0">
+                            <span
+                                class="material-symbols-outlined text-on-tertiary-container text-[24px]">skeleton</span>
+                        </div>
+                        <div class="flex flex-col gap-1 z-10">
+                            <h3 class="font-label-md text-on-surface text-[16px]">Fisioterapia Ortopédica</h3>
+                            <p class="font-body-md text-on-surface-variant text-sm line-clamp-2">Reabilitação de lesões
+                                musculares, articulares e pós-operatórios, focando na recuperação funcional completa.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-beige-main flex gap-4 items-start relative overflow-hidden group hover:border-secondary/30 transition-colors">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-secondary-container/5 rounded-bl-full -z-10 group-hover:bg-secondary-container/10 transition-colors">
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
+                            <span
+                                class="material-symbols-outlined text-on-secondary-container text-[24px]">elderly</span>
+                        </div>
+                        <div class="flex flex-col gap-1 z-10">
+                            <h3 class="font-label-md text-on-surface text-[16px]">Fisioterapia em Geriatria</h3>
+                            <p class="font-body-md text-on-surface-variant text-sm line-clamp-2">Prevenção de quedas,
+                                melhora da mobilidade e qualidade de vida para a terceira idade com exercícios
+                                específicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAINEL DO PACIENTE -->
+            <section class="px-container-padding-mobile py-stack-md flex flex-col gap-stack-sm mt-4">
+                <div class="flex items-center justify-between mb-2">
+                    <h2 class="font-headline-md text-on-surface">Acompanhamento do Paciente</h2>
+                    <span class="material-symbols-outlined text-beige-dark">monitor_heart</span>
+                </div>
+
+                <div
+                    class="flex flex-col w-full gap-stack-md bg-beige-light/50 p-4 rounded-2xl border border-beige-main/40 shadow-sm">
+
+                    <div class="flex flex-col gap-stack-sm">
+                        <h3 class="font-headline-lg-mobile text-on-surface text-[20px]">Roberto Silva</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-md rounded-full text-xs">Pós-operatório
+                                LCR</span>
+                            <span
+                                class="px-3 py-1 bg-beige-main text-primary font-label-md rounded-full text-xs border border-beige-dark/30">Fase
+                                2: Intermediária</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-stack-sm">
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-2 relative overflow-hidden border border-beige-main/30">
+                            <div class="flex items-center justify-between z-10">
+                                <span class="material-symbols-outlined text-primary text-[24px]">vital_signs</span>
+                                <span class="text-xs font-label-md text-on-surface-variant">BPM</span>
+                            </div>
+                            <div class="flex items-end gap-1 z-10">
+                                <span class="font-headline-lg-mobile text-on-surface text-[24px]">72</span>
+                                <span class="text-xs text-on-surface-variant mb-1 font-body-md">Repouso</span>
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 right-0 h-1/2 opacity-20 bg-gradient-to-t from-primary/30 to-transparent">
+                            </div>
+                        </div>
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-2 border border-beige-main/30">
+                            <div class="flex items-center justify-between">
+                                <span class="material-symbols-outlined text-secondary text-[24px]">directions_walk</span>
+                                <span class="text-xs font-label-md text-on-surface-variant">Mobilidade</span>
+                            </div>
+                            <div class="flex items-end gap-1">
+                                <span class="font-headline-lg-mobile text-on-surface text-[24px]">85</span>
+                                <span class="text-xs text-on-surface-variant mb-1 font-body-md">% ADM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-stack-sm border border-beige-main/30">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Progresso do
+                                Tratamento</h4>
+                            <span class="text-xs font-label-md text-primary">Semana 4 de 12</span>
+                        </div>
+                        <div class="w-full bg-beige-main/40 rounded-full h-2 overflow-hidden">
+                            <div class="bg-primary h-full rounded-full transition-all duration-1000 ease-out"
+                                id="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs font-caption text-on-surface-variant">
+                            <span>Fase Aguda</span>
+                            <span>Recuperação Ativa</span>
+                            <span>Alta</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-stack-sm border border-beige-main/30">
+                        <div class="flex justify-between items-start">
+                            <div class="flex flex-col">
+                                <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Histórico
+                                    Semanal</h4>
+                                <span class="font-caption text-on-surface-variant text-xs mt-1">Sua consistência nos
+                                    últimos 7 dias</span>
+                            </div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-beige-main/50 flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-2 mt-2">
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">80%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-primary rounded-full transition-all duration-1000 ease-out" data-height="80" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface">D</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">95%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-primary rounded-full transition-all duration-1000 ease-out" data-height="95" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface">S</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">70%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-primary rounded-full transition-all duration-1000 ease-out" data-height="70" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface">T</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">85%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-primary rounded-full transition-all duration-1000 ease-out" data-height="85" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface">Q</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">20%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-beige-dark rounded-full transition-all duration-1000 ease-out" data-height="20" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface-variant">Q</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">15%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-beige-dark rounded-full transition-all duration-1000 ease-out" data-height="15" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface-variant">S</span></div>
+                            <div class="flex flex-col items-center gap-1"><span class="font-caption text-[9px] text-on-surface-variant">10%</span><div class="w-full h-20 bg-beige-main/40 rounded-full overflow-hidden flex items-end"><div class="week-bar w-full bg-beige-dark rounded-full transition-all duration-1000 ease-out" data-height="10" style="height: 0%"></div></div><span class="font-caption text-[10px] font-bold text-on-surface-variant">S</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Exercícios -->
+                    <div class="flex flex-col gap-stack-sm">
+                        <div class="flex justify-between items-center gap-2">
+                            <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Exercícios
+                                Recomendados</h4>
+                            <span id="exercise-counter"
+                                class="px-2 py-1 bg-primary-fixed text-on-primary-fixed font-label-md rounded-full text-[10px] shrink-0">1
+                                de 2 concluídos • 50%</span>
+                        </div>
+                        <div class="grid gap-stack-sm">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex justify-between items-center border border-beige-main/30">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">fitness_center</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-md text-on-surface text-sm">Fortalecimento de
+                                            Quadríceps</span>
+                                        <span class="font-caption text-on-surface-variant text-xs">Diário, 3 séries de
+                                            15</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <button
+                                        class="w-8 h-8 rounded-full bg-beige-main flex items-center justify-center text-primary hover:bg-beige-dark transition-colors"
+                                        aria-label="Reproduzir vídeo">
+                                        <span class="material-symbols-outlined text-[20px]">play_arrow</span>
+                                    </button>
+                                    <button
+                                        class="exercise-toggle w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed transition-colors"
+                                        data-done="true" aria-label="Alternar conclusão">
+                                        <span class="material-symbols-outlined text-[18px]">check</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex justify-between items-center border border-beige-main/30">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">self_care</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-md text-on-surface text-sm">Alongamento de
+                                            Isquiotibiais</span>
+                                        <span class="font-caption text-on-surface-variant text-xs">2x ao dia, 30s</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <button
+                                        class="w-8 h-8 rounded-full bg-beige-main flex items-center justify-center text-primary hover:bg-beige-dark transition-colors"
+                                        aria-label="Reproduzir vídeo">
+                                        <span class="material-symbols-outlined text-[20px]">play_arrow</span>
+                                    </button>
+                                    <button
+                                        class="exercise-toggle w-8 h-8 rounded-full bg-beige-main/50 flex items-center justify-center text-on-surface-variant transition-colors"
+                                        data-done="false" aria-label="Alternar conclusão">
+                                        <span
+                                            class="material-symbols-outlined text-[18px]">check_box_outline_blank</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Últimas Sessões -->
+                    <div class="flex flex-col gap-stack-sm">
+                        <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Últimas Sessões</h4>
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 border border-beige-main/30">
+                            <div class="flex justify-between items-start">
+                                <div class="flex flex-col">
+                                    <span class="font-label-md text-on-surface text-sm">Crioterapia +
+                                        Fortalecimento</span>
+                                    <span class="font-caption text-on-surface-variant text-xs mt-1">12 de Outubro, 2023
+                                        • 45 min</span>
+                                </div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+                                    <span class="material-symbols-outlined text-[16px]">check</span>
+                                </div>
+                            </div>
+                            <p class="font-body-md text-sm text-on-surface-variant line-clamp-2">Paciente relatou leve
+                                desconforto na extensão final. Realizados exercícios focados no quadríceps e
+                                estabilização.</p>
+                        </div>
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 opacity-75 border border-beige-main/10">
+                            <div class="flex justify-between items-start">
+                                <div class="flex flex-col">
+                                    <span class="font-label-md text-on-surface text-sm">Terapia Manual e
+                                        Mobilização</span>
+                                    <span class="font-caption text-on-surface-variant text-xs mt-1">09 de Outubro, 2023
+                                        • 50 min</span>
+                                </div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-beige-main/50 flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-[16px]">history</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ações Rápidas -->
+                    <div class="grid grid-cols-2 gap-stack-sm mt-2">
+                        <button id="btn-share"
+                            class="flex flex-col items-center justify-center gap-1 bg-surface-container-lowest border border-beige-main/30 p-3 rounded-xl shadow-sm hover:border-primary hover:shadow-md transition-all active:scale-95 group">
+                            <span
+                                class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">share</span>
+                            <span
+                                class="font-caption text-on-surface text-[11px] text-center leading-tight">Compartilhar<br>Progresso</span>
+                        </button>
+                        <a href="https://wa.me/5587991992741?text=Olá! Gostaria de compartilhar meu progresso na fisioterapia."
+                            target="_blank"
+                            class="flex flex-col items-center justify-center gap-1 bg-surface-container-lowest border border-beige-main/30 p-3 rounded-xl shadow-sm hover:border-green-500 hover:shadow-md transition-all active:scale-95 group">
+                            <span
+                                class="material-symbols-outlined text-green-600 group-hover:scale-110 transition-transform">chat</span>
+                            <span
+                                class="font-caption text-on-surface text-[11px] text-center leading-tight">Enviar por<br>WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/share/url?url=Meu Progresso na Fisioterapia&text=Confira minha evolução!"
+                            target="_blank"
+                            class="flex flex-col items-center justify-center gap-1 bg-surface-container-lowest border border-beige-main/30 p-3 rounded-xl shadow-sm hover:border-blue-500 hover:shadow-md transition-all active:scale-95 group">
+                            <span
+                                class="material-symbols-outlined text-blue-500 group-hover:scale-110 transition-transform">send</span>
+                            <span
+                                class="font-caption text-on-surface text-[11px] text-center leading-tight">Enviar por<br>Telegram</span>
+                        </a>
+                        <button id="btn-print"
+                            class="flex flex-col items-center justify-center gap-1 bg-primary text-on-primary p-3 rounded-xl shadow-sm active:scale-95 transition-transform group">
+                            <span
+                                class="material-symbols-outlined group-hover:-translate-y-0.5 transition-transform">print</span>
+                            <span class="font-caption text-[11px] text-center leading-tight font-bold">Imprimir<br>Prontuário</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RAIZ: MAP (agora com id="contato") -->
+            <section id="contato"
+                class="px-container-padding-mobile py-stack-md flex flex-col gap-stack-sm bg-surface-container-low mt-4 rounded-t-[2rem]">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary-container text-[20px]">location_on</span>
+                    </div>
+                    <div>
+                        <h2 class="font-label-md text-on-surface text-[16px]">Memorial São Lucas</h2>
+                        <p class="font-caption text-on-surface-variant">Medicina e Saúde</p>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Memorial+S%C3%A3o+Lucas+PE" target="_blank"
+                    class="w-full h-48 rounded-xl shadow-sm overflow-hidden border border-beige-main relative block">
+                    <div class="w-full h-full bg-cover bg-center"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZdntKWuO71KCBAaoNbHtVfpopYjZnyVolf1lLL6Wn3GqAd1r9g-wcF4NKLNiT-y5-qQ8XYdL8of20jRs_xiBqdulGeBxylwpJWkfItr31bAOCerw2hEaPtJ59kZDSrSqwxXCDvyKwsHrAezqmcWoM13gpQfuVKYTX2VKH12uj7iLehI4_Bd5yWiUxav__N3bkFWqB8TPbLRUo_274IIKWb90e3IbugpPVsJk4dQl_jVLWvOicUfF9w')">
+                    </div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-3 pt-8">
+                        <p class="font-caption text-on-primary text-[11px] truncate flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">explore</span> Av. Principal, Centro -
+                            Toque para ver a rota
+                        </p>
+                    </div>
+                </a>
+                <div
+                    class="flex justify-between items-center bg-surface-container-lowest p-4 rounded-xl border border-beige-main mt-2 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
+                    <div class="flex flex-col">
+                        <span class="font-label-md text-on-surface">Dúvidas?</span>
+                        <span class="font-caption text-on-surface-variant">(87) 9 9199-2741</span>
+                    </div>
+                    <a class="w-10 h-10 rounded-full bg-beige-main text-primary flex items-center justify-center hover:bg-beige-dark transition-colors"
+                        href="tel:+5587991992741" aria-label="Ligar para a clínica">
+                        <span class="material-symbols-outlined text-[20px]">call</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 3. FOOTER PREMIUM -->
+    <footer class="relative bg-[#0A1931] pt-12 pb-28 px-container-padding-mobile overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-8 bg-beige-light rounded-b-[3rem] -translate-y-1/2"></div>
+        <div
+            class="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none">
+        </div>
+        <div class="relative z-10 flex flex-col gap-8">
+            <div class="flex flex-col gap-1 border-l-4 border-beige-main pl-4">
+                <h3 class="font-headline-md text-white text-[20px] leading-tight">Dra. Beatriz Gonçalves</h3>
+                <span class="font-label-md text-beige-main uppercase tracking-wider text-[11px]">Fisioterapeuta</span>
+                <span class="font-caption text-white/60 mt-1">CREFITO 458955-F</span>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center py-4 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <div class="flex flex-col items-center gap-2">
+                    <div class="relative w-12 h-12 flex items-center justify-center">
+                        <div class="absolute w-4 h-12 bg-white/90 rounded-sm"></div>
+                        <div class="absolute w-12 h-4 bg-white/90 rounded-sm"></div>
+                        <svg class="absolute w-8 h-8 text-secondary translate-x-2 translate-y-2" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" fill="none" />
+                            <path d="M2 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-label-md text-white/70 text-[10px] uppercase tracking-[0.2em]">Memorial</p>
+                        <p class="font-headline-md text-white text-[22px] leading-none">São Lucas</p>
+                        <p class="font-caption text-beige-main text-[9px] uppercase tracking-widest mt-1">Medicina e
+                            Saúde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <a href="https://www.google.com/maps/search/?api=1&query=Memorial+S%C3%A3o+Lucas+PE" target="_blank"
+                    class="flex items-center gap-3 text-white/80 hover:text-beige-main transition-colors group">
+                    <div
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-beige-main/20 transition-colors">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span></div>
+                    <span class="font-body-md text-[14px]">Av. Principal, Centro • PE</span>
+                </a>
+                <a href="tel:+5587991992741"
+                    class="flex items-center gap-3 text-white/80 hover:text-beige-main transition-colors group">
+                    <div
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-beige-main/20 transition-colors">
+                        <span class="material-symbols-outlined text-[18px]">call</span></div>
+                    <span class="font-body-md text-[14px]">(87) 9 9199-2741</span>
+                </a>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <div class="flex gap-3">
+                    <a href="#"
+                        class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-beige-main hover:text-[#0A1931] transition-all"
+                        aria-label="Compartilhar"><span class="material-symbols-outlined text-[18px]">share</span></a>
+                    <a href="mailto:contato@memorialsãolucas.com"
+                        class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-beige-main hover:text-[#0A1931] transition-all"
+                        aria-label="Enviar email"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+                    <a href="https://wa.me/5587991992741" target="_blank"
+                        class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-green-500 hover:text-white transition-all"
+                        aria-label="WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></a>
+                </div>
+                <p class="font-caption text-white/40 text-[10px] text-right leading-tight">
+                    &copy; <span id="current-year"></span> Todos os<br>direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- NOVO: BOTTOM SHEET DE AGENDAMENTO (OCULTO) -->
+    <!-- ========================================== -->
+    <div id="booking-overlay" class="fixed inset-0 z-[60] pointer-events-none">
+        <!-- Backdrop desfocado -->
+        <div id="booking-backdrop"
+            class="absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+
+        <!-- Painel deslizante -->
+        <div id="booking-sheet"
+            class="absolute inset-x-0 bottom-0 max-h-[88dvh] overflow-y-auto bg-beige-light rounded-t-[2rem] shadow-2xl translate-y-full transition-transform duration-500 ease-out pb-safe">
+
+            <!-- Alça + Cabeçalho fixo do sheet -->
+            <div
+                class="sticky top-0 z-10 bg-beige-light/95 backdrop-blur-xl px-container-padding-mobile pt-3 pb-4 rounded-t-[2rem] border-b border-beige-main/30">
+                <div class="w-10 h-1 rounded-full bg-beige-dark mx-auto mb-3"></div>
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col">
+                        <h2 class="font-headline-md text-on-surface">Agendar Consulta</h2>
+                        <p class="font-caption text-on-surface-variant mt-0.5">Selecione o melhor dia e horário.</p>
+                    </div>
+                    <button id="booking-close"
+                        class="w-10 h-10 rounded-full bg-beige-main/60 flex items-center justify-center text-primary hover:bg-beige-main transition-colors"
+                        aria-label="Fechar agendamento">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="px-container-padding-mobile py-stack-md flex flex-col gap-stack-md">
+
+                <!-- Especialidade -->
+                <div class="flex flex-col gap-stack-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                        <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Especialidade</h4>
+                    </div>
+                    <div class="grid gap-stack-sm">
+                        <button data-name="Fisioterapia Traumato-Ortopédica"
+                            class="specialty-option flex items-center justify-between gap-3 bg-surface-container-lowest border-2 border-primary rounded-xl p-4 shadow-sm transition-all text-left">
+                            <div class="flex flex-col">
+                                <span class="font-label-md text-on-surface text-sm">Fisioterapia
+                                    Traumato-Ortopédica</span>
+                                <span class="font-caption text-on-surface-variant text-xs mt-0.5">Reabilitação
+                                    musculoesquelética</span>
+                            </div>
+                            <span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span>
+                        </button>
+                        <button data-name="Avaliação Inicial"
+                            class="specialty-option flex items-center justify-between gap-3 bg-surface-container-lowest border-2 border-beige-main/30 rounded-xl p-4 shadow-sm transition-all hover:border-primary/40 text-left">
+                            <div class="flex flex-col">
+                                <span class="font-label-md text-on-surface text-sm">Avaliação Inicial</span>
+                                <span class="font-caption text-on-surface-variant text-xs mt-0.5">Primeira consulta e
+                                    diagnóstico</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0">radio_button_unchecked</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Calendário Semanal -->
+                <div class="flex flex-col gap-stack-sm">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+                            <h4 id="month-label"
+                                class="font-label-md text-on-surface uppercase tracking-wider text-xs">—</h4>
+                        </div>
+                        <div class="flex gap-1">
+                            <button id="week-prev"
+                                class="w-8 h-8 rounded-full bg-beige-main/50 flex items-center justify-center text-primary hover:bg-beige-dark transition-colors"
+                                aria-label="Semana anterior">
+                                <span class="material-symbols-outlined text-[18px]">chevron_left</span>
+                            </button>
+                            <button id="week-next"
+                                class="w-8 h-8 rounded-full bg-beige-main/50 flex items-center justify-center text-primary hover:bg-beige-dark transition-colors"
+                                aria-label="Próxima semana">
+                                <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="week-strip" class="grid grid-cols-5 gap-2"></div>
+                </div>
+
+                <!-- Horários -->
+                <div class="flex flex-col gap-stack-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+                        <h4 class="font-label-md text-on-surface uppercase tracking-wider text-xs">Horários
+                            Disponíveis</h4>
+                    </div>
+                    <div id="time-grid" class="grid grid-cols-3 gap-2"></div>
+                </div>
+
+                <!-- Confirmação WhatsApp -->
+                <div class="flex items-center gap-3 bg-primary-fixed/60 border border-primary/20 rounded-xl p-4">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-on-primary text-[20px]">chat</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-label-md text-on-primary-fixed text-sm">Confirmação via WhatsApp</span>
+                        <span class="font-caption text-on-surface-variant text-xs mt-0.5">Receba lembretes da
+                            consulta</span>
+                    </div>
+                </div>
+
+                <!-- Confirmar -->
+                <button id="btn-confirm"
+                    class="w-full bg-secondary text-on-secondary py-3 px-4 rounded-full font-label-md flex items-center justify-center gap-2 hover:bg-secondary/90 transition-colors shadow-sm active:scale-95 transform duration-150 group">
+                    <span>Confirmar Agendamento</span>
+                    <span
+                        class="material-symbols-outlined group-hover:translate-x-0.5 transition-transform text-[20px]">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. BOTTOM NAV -->
+    <nav
+        class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-beige-light/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]">
+        <div class="flex justify-around items-center h-20 px-4">
+            <a aria-current="page"
+                class="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all text-primary font-bold"
+                href="#">
+                <span class="material-symbols-outlined">home</span><span class="font-label-md text-xs">Home</span>
+            </a>
+            <a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-on-surface-variant transition-all hover:text-primary"
+                href="#">
+                <span class="material-symbols-outlined">dashboard</span><span class="font-label-md text-xs">Painel</span>
+            </a>
+            <a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-on-surface-variant transition-all hover:text-primary"
+                href="#contato">
+                <span class="material-symbols-outlined">chat_bubble</span><span class="font-label-md text-xs">Contato</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Tema Dark Mode
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        function applyTheme(isDark) {
+            document.documentElement.classList.toggle('dark', isDark);
+            themeIcon.textContent = isDark ? 'light_mode' : 'dark_mode';
+        }
+        try { if (localStorage.getItem('theme') === 'dark') applyTheme(true); } catch (e) {}
+        themeToggle.addEventListener('click', () => {
+            const isDark = !document.documentElement.classList.contains('dark');
+            applyTheme(isDark);
+            try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+        });
+
+        // Hero: alternância de fotos
+        const imgGreen = document.getElementById('img-green');
+        const imgWhite = document.getElementById('img-white');
+        const profileContainer = document.getElementById('profile-container');
+        let isWhiteActive = false;
+        let autoSwitchInterval;
+        function toggleImages() {
+            isWhiteActive = !isWhiteActive;
+            imgGreen.style.opacity = isWhiteActive ? '0' : '1';
+            imgWhite.style.opacity = isWhiteActive ? '1' : '0';
+        }
+        function startAutoSwitch() { autoSwitchInterval = setInterval(toggleImages, 5000); }
+        function stopAutoSwitch() { clearInterval(autoSwitchInterval); }
+        startAutoSwitch();
+        profileContainer.addEventListener('mouseenter', () => { stopAutoSwitch(); if (!isWhiteActive) toggleImages(); });
+        profileContainer.addEventListener('mouseleave', () => { if (isWhiteActive) toggleImages(); startAutoSwitch(); });
+        profileContainer.addEventListener('touchstart', (e) => { e.preventDefault(); stopAutoSwitch(); toggleImages(); }, { passive: false });
+
+        // Barra de progresso
+        setTimeout(() => {
+            const pb = document.getElementById('progress-bar');
+            if (pb) pb.style.width = '33.33%';
+        }, 100);
+
+        // Gráfico semanal
+        setTimeout(() => {
+            document.querySelectorAll('.week-bar').forEach((bar, i) => {
+                setTimeout(() => { bar.style.height = (bar.dataset.height || 0) + '%'; }, i * 90);
+            });
+        }, 250);
+
+        // Exercícios + contador
+        const exerciseCounter = document.getElementById('exercise-counter');
+        const exerciseToggles = document.querySelectorAll('.exercise-toggle');
+        function updateExerciseCounter() {
+            const total = exerciseToggles.length;
+            const done = Array.from(exerciseToggles).filter(b => b.dataset.done === 'true').length;
+            const pct = Math.round((done / total) * 100);
+            if (exerciseCounter) exerciseCounter.textContent = `${done} de ${total} concluídos • ${pct}%`;
+        }
+        exerciseToggles.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const nowDone = btn.dataset.done !== 'true';
+                btn.dataset.done = nowDone ? 'true' : 'false';
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (nowDone) {
+                    icon.textContent = 'check';
+                    btn.classList.remove('bg-beige-main/50', 'text-on-surface-variant');
+                    btn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+                } else {
+                    icon.textContent = 'check_box_outline_blank';
+                    btn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+                    btn.classList.add('bg-beige-main/50', 'text-on-surface-variant');
+                }
+                updateExerciseCounter();
+            });
+        });
+        updateExerciseCounter();
+
+        // Ações rápidas
+        document.getElementById('btn-share').addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'Meu Progresso na Fisioterapia',
+                        text: 'Confira minha evolução no tratamento com a Dra. Beatriz Gonçalves!',
+                        url: window.location.href
+                    });
+                } catch (err) {}
+            } else {
+                alert('Seu navegador não suporta compartilhamento nativo. Use WhatsApp ou Telegram!');
+            }
+        });
+        document.getElementById('btn-print').addEventListener('click', () => window.print());
+
+        // ===== NOVO: BOTTOM SHEET (abrir/fechar) =====
+        const overlay = document.getElementById('booking-overlay');
+        const backdrop = document.getElementById('booking-backdrop');
+        const sheet = document.getElementById('booking-sheet');
+
+        function openBooking() {
+            overlay.classList.remove('pointer-events-none');
+            backdrop.classList.remove('opacity-0');
+            sheet.classList.remove('translate-y-full');
+            document.body.style.overflow = 'hidden'; // trava a rolagem atrás
+        }
+        function closeBooking() {
+            overlay.classList.add('pointer-events-none');
+            backdrop.classList.add('opacity-0');
+            sheet.classList.add('translate-y-full');
+            document.body.style.overflow = ''; // libera a rolagem
+        }
+        document.getElementById('cta-agendar').addEventListener('click', openBooking);
+        document.getElementById('booking-close').addEventListener('click', closeBooking);
+        backdrop.addEventListener('click', closeBooking);
+
+        // ===== AGENDAMENTO INTELIGENTE =====
+        const MONTH_NAMES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+        const DAY_NAMES = ['SEG','TER','QUA','QUI','SEX'];
+        const TIME_SLOTS = ['08:00','09:00','10:00','11:00','14:00','15:00'];
+        const weekStrip = document.getElementById('week-strip');
+        const monthLabel = document.getElementById('month-label');
+        const timeGrid = document.getElementById('time-grid');
+        let weekOffset = 0;
+        let selectedTime = null;
+        let selectedSpecialty = 'Fisioterapia Traumato-Ortopédica';
+
+        function mondayOf(date) {
+            const d = new Date(date);
+            const day = d.getDay();
+            d.setDate(d.getDate() + (day === 0 ? -6 : 1 - day));
+            d.setHours(0, 0, 0, 0);
+            return d;
+        }
+        let selectedDate = mondayOf(new Date());
+
+        function renderWeek() {
+            const base = mondayOf(new Date());
+            base.setDate(base.getDate() + weekOffset * 7);
+            monthLabel.textContent = `${MONTH_NAMES[base.getMonth()]} ${base.getFullYear()}`;
+            weekStrip.innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                const d = new Date(base);
+                d.setDate(base.getDate() + i);
+                const isSel = selectedDate.toDateString() === d.toDateString();
+                const btn = document.createElement('button');
+                btn.className = 'flex flex-col items-center gap-1 py-2 rounded-xl border transition-all ' + (isSel
+                    ? 'bg-primary border-primary text-on-primary shadow-sm'
+                    : 'bg-surface-container-lowest border-beige-main/30 text-on-surface hover:border-primary/40');
+                btn.innerHTML =
+                    `<span class="font-caption text-[10px] ${isSel ? 'text-on-primary/80' : 'text-on-surface-variant'}">${DAY_NAMES[i]}</span>` +
+                    `<span class="font-headline-md text-[16px] leading-none">${d.getDate()}</span>`;
+                btn.addEventListener('click', () => { selectedDate = d; renderWeek(); });
+                weekStrip.appendChild(btn);
+            }
+        }
+
+        function renderTimes() {
+            timeGrid.innerHTML = '';
+            TIME_SLOTS.forEach(t => {
+                const isSel = selectedTime === t;
+                const btn = document.createElement('button');
+                btn.className = 'py-2 rounded-full border font-label-md text-xs transition-all ' + (isSel
+                    ? 'bg-secondary border-secondary text-on-secondary shadow-sm'
+                    : 'bg-surface-container-lowest border-beige-main/30 text-on-surface hover:border-secondary/40');
+                btn.textContent = t;
+                btn.addEventListener('click', () => { selectedTime = t; renderTimes(); });
+                timeGrid.appendChild(btn);
+            });
+        }
+
+        document.getElementById('week-prev').addEventListener('click', () => { weekOffset--; renderWeek(); });
+        document.getElementById('week-next').addEventListener('click', () => { weekOffset++; renderWeek(); });
+
+        // Especialidades
+        document.querySelectorAll('.specialty-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.specialty-option').forEach(b => {
+                    b.classList.remove('border-primary');
+                    b.classList.add('border-beige-main/30');
+                    const ic = b.querySelector('.material-symbols-outlined');
+                    ic.textContent = 'radio_button_unchecked';
+                    ic.classList.remove('text-primary');
+                    ic.classList.add('text-on-surface-variant');
+                });
+                btn.classList.add('border-primary');
+                btn.classList.remove('border-beige-main/30');
+                const ic = btn.querySelector('.material-symbols-outlined');
+                ic.textContent = 'check_circle';
+                ic.classList.remove('text-on-surface-variant');
+                ic.classList.add('text-primary');
+                selectedSpecialty = btn.dataset.name;
+            });
+        });
+
+        // Confirmar → WhatsApp + fecha o sheet
+        document.getElementById('btn-confirm').addEventListener('click', () => {
+            if (!selectedDate || !selectedTime) {
+                alert('Selecione um dia e um horário disponíveis para confirmar. 🙂');
+                return;
+            }
+            const dataStr = selectedDate.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' });
+            const msg = `Olá, Dra. Beatriz! Gostaria de agendar ${selectedSpecialty} para ${dataStr}, às ${selectedTime}.`;
+            window.open('https://wa.me/5587991992741?text=' + encodeURIComponent(msg), '_blank');
+            closeBooking();
+        });
+
+        renderWeek();
+        renderTimes();
+    </script>
+</body>
+
+</html>
